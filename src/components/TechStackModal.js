@@ -60,6 +60,10 @@ const TechStackModal = ({ open, onClose, size = "large" }) => {
               <span className="focus-label devops">ML / AI :</span>
               <span className="focus-desc">Scikit-learn, Pandas, TensorFlow </span>
             </div>
+            <div>
+              <span className="focus-label devops">App Development :</span>
+              <span className="focus-desc">Flutter, Android Studio</span>
+            </div>
           </div>
         </div>
       </div>

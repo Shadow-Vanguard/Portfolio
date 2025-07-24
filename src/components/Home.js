@@ -77,6 +77,39 @@ export default function Home() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  // Tooltip logic
+  const [tooltip, setTooltip] = React.useState({ show: false, message: '', x: 0, y: 0 });
+  const tooltipTimeout = React.useRef();
+
+  const handleMouseEnter = (e, message) => {
+    if (isMobile) return;
+    const rect = e.target.getBoundingClientRect();
+    setTooltip({
+      show: true,
+      message,
+      x: rect.left + rect.width / 2,
+      y: rect.bottom + window.scrollY
+    });
+  };
+  const handleMouseLeave = () => {
+    if (isMobile) return;
+    setTooltip({ ...tooltip, show: false });
+  };
+  const handleMobileClick = (e, message) => {
+    if (!isMobile) return;
+    const rect = e.target.getBoundingClientRect();
+    setTooltip({
+      show: true,
+      message,
+      x: rect.left + rect.width / 2,
+      y: rect.bottom + window.scrollY
+    });
+    clearTimeout(tooltipTimeout.current);
+    tooltipTimeout.current = setTimeout(() => {
+      setTooltip(t => ({ ...t, show: false }));
+    }, 2000);
+  };
+
   return (
     <div className="home-bg">
       {/* Top Navigation */}
@@ -84,13 +117,37 @@ export default function Home() {
         <button className="nav-btn active">
           {isMobile ? <i className="fa-solid fa-briefcase"></i> : 'Professional'}
         </button>
-        <button className="nav-btn">
+        <button
+          className="nav-btn"
+          onMouseEnter={e => handleMouseEnter(e, 'Under development')}
+          onMouseLeave={handleMouseLeave}
+          onClick={e => handleMobileClick(e, 'Under development')}
+        >
           {isMobile ? <i className="fa-solid fa-user"></i> : 'Personal'}
         </button>
-        <button className="nav-btn">
+        <button
+          className="nav-btn"
+          onMouseEnter={e => handleMouseEnter(e, 'Under development')}
+          onMouseLeave={handleMouseLeave}
+          onClick={e => handleMobileClick(e, 'Under development')}
+        >
           {isMobile ? <i className="fa-solid fa-envelope"></i> : 'Contact'}
         </button>
       </nav>
+      {tooltip.show && (
+        <div
+          className="custom-tooltip"
+          style={{
+            position: 'absolute',
+            left: tooltip.x,
+            top: tooltip.y + 8,
+            transform: 'translateX(-50%)',
+            zIndex: 2000
+          }}
+        >
+          {tooltip.message}
+        </div>
+      )}
       {/* Main Content */}
       <main className="home-main">  
         <section className="home-left">
@@ -104,7 +161,7 @@ export default function Home() {
             An MCA Graduate | Software Engineer & Full-Stack Developer | Learning, Building, Evolving | Driven by purpose, grounded in progress
           </p>
           <div className="home-actions" ref={actionsRef}>
-            <a href="#" className="resume-btn">
+            <a href="/media/Roshan_Varghese_Resume.pdf" className="resume-btn" target="_blank" rel="noopener noreferrer">
               VIEW RESUME <i className="fa fa-file"></i>
             </a>
             <div className="social-icons">
@@ -120,7 +177,7 @@ export default function Home() {
           <div className="profile-pic-wrapper">
             <div className="profile-outline"></div>
             <img
-              src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=400&h=400"
+              src={require("../media/me.jpg")}
               alt="Profile"
               className="profile-pic"
             />

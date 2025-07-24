@@ -249,7 +249,7 @@
 .dot {
   position: absolute;
   background: #3fe07f;
-  border-radius: 90%;
+  border-radius: 50%;
 }
 
 .dot1 {
@@ -377,6 +377,27 @@
 
 .home-stats {
   margin-bottom: 20px;
+}
+
+
+/* under development tooltip */
+.custom-tooltip {
+  background: linear-gradient(90deg, #3fe07f 0%, #07d0f3 100%);
+  color: #181a20;
+  padding: 10px 20px;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  animation: tooltipFadeIn 0.25s forwards;
+}
+
+@keyframes tooltipFadeIn {
+  from { opacity: 0; transform: translateY(10px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 @media (max-width: 600px) {
@@ -529,26 +550,32 @@
     flex-direction: column;
     gap: 10px;
   }
+  .dot {
+    position: absolute !important;
+    background: #3fe07f;
+    border-radius: 50%;
+  }
   .dot1 {
-    top: -2px !important;
-    right: 0 !important;
+    top: -4px !important;
+    right: 8px !important;
     left: auto !important;
     width: 10px !important;
     height: 10px !important;
   }
   .dot2 {
-    bottom: -18px !important;
-    left: 30px !important;
-    width: 6px !important;
-    height: 6px !important;
+    bottom: -8px !important;
+    left: 18px !important;
+    width: 8px !important;
+    height: 8px !important;
   }
   .dot3 {
-    bottom: 10px !important;
-    left: 100% !important;
+    bottom: 18px !important;
+    left: 170px !important;
     width: 8px !important;
     height: 8px !important;
     right: auto !important;
   }
+  
   .nav-btn.active {
     background: rgba(63, 224, 127, 0.15) !important;
     border-radius: 10% !important;
@@ -556,5 +583,15 @@
     color: #07d0f3 !important;
     transition: background 0.2s;
     width: 40px !important;
+  }
+  .custom-tooltip {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+    border-radius: 12px;
+    max-width: 90vw;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    white-space: normal;
+    text-align: center;
   }
 }

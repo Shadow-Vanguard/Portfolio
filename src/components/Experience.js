@@ -11,7 +11,7 @@ const experiences = [
     date: "Jul 2025 - Present",
     location: "Remote",
     details: [
-      "Hands-on experience in real-time data science projects using Python, ML, and data-driven model building.",
+      "Hands-on experience in real-time data science projects using Python and ML involving data analysis and model building.",
       "Contributing to team tasks by preparing reports, analyzing datasets, and presenting actionable insights.",
       "Collaborating with cross-functional teams to implement data-driven solutions and improve business outcomes."
     ],

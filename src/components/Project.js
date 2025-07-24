@@ -5,7 +5,7 @@ import Footer from "./Footer";
 const categories = [
   "Road Guardian",
   "Glamour Quest",
-  "House Rental System",
+  "Estate Agency",
   "Wiki Search Engine",
 
 ];
@@ -29,7 +29,7 @@ const allProjects = [
     github: "https://github.com/Shadow-Vanguard/Glamour_Quest/"
   },
   {
-    category: "House Rental System",
+    category: "Estate Agency",
     title: "Estate Agency", 
     image: require("../media/house_rental.jpg"),
     description: "A full-stack House Rental web application built with Django and React that allows users to browse, list, and manage rental properties with a clean and responsive interface.",

@@ -142,7 +142,7 @@
 }
 .timeline-card .company:hover {
   color: #00fc69;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .timeline-card .meta {
   color: #aaa;
@@ -237,7 +237,8 @@
     left: 8px;
     transform-origin: top;
     width: 3px;
-    height: calc(100% + 350px);
+  
+    /* height: calc(100% + 350px); */
   }
   .year {
     font-size: 1.2em;
@@ -265,13 +266,13 @@
     font-size: 0.9em;
   }
   .timeline-row:last-child .timeline-year::before {
-    height: 345px; /* Adjust to stop at the last dot */
+    height: 400px; 
   }
-  /*
-  .timeline::after {
+  
+  /* .timeline::after {
     left: 8px; 
     width: 3px;
     height: 60px;
-  }
-  */
+  } */
+ 
 }
