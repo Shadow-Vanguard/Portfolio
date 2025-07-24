@@ -1,0 +1,276 @@
+body {
+  background: #232329;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard-container {
+  padding: 2rem;
+  background:#181a20;
+  min-height: 100vh;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: linear-gradient(135deg, #181a20 80%, #5e5e6d85 100%);
+  border-radius: 18px;
+  padding: 28px 24px;
+  box-shadow: 0 2px 16px rgba(0,0,0,3);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card:hover {
+  background: linear-gradient(120deg, #ce777746 60%, #1d1d57 100%);
+}
+
+.card-main {
+  grid-column: span 2;
+  background: linear-gradient(120deg, #00000071 60%, #1d1d57 100%);
+}
+
+.card-wide {
+  grid-column: span 2;
+  background: linear-gradient(120deg, #00000071 60%, #1d1d57 100%);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  background: #2ecc71;
+  color: #18181c;
+  border-radius: 50%;
+  padding: 6px 10px;
+  font-size: 1.2em;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tag {
+  background:#23e4734b;
+  color: #00fc69;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 0.95em;
+}
+
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.tech-stack span {
+  background:#23e4734b;
+  color: #00fc69;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 0.95em;
+}
+
+.more-tech {
+  color: #2ecc71;
+  font-size: 0.95em;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+.more-cert {
+  color: #2ecc71;
+  font-size: 0.95em;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.stats {
+  display: flex;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.stat-number {
+  font-size: 2em;
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.stat-label {
+  display: block;
+  font-size: 1em;
+  color: #aaa;
+}
+
+.contact-icon {
+  font-size: 2.5em;
+  background: #2ecc71;
+  color: #18181c;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.email-btn {
+  background: #2ecc71;
+  color: #18181c;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.achievements {
+  display: flex;
+  gap: 18px;
+  margin: 16px 0;
+}
+
+.achievement {
+  background: #232329;
+  border-radius: 10px;
+  padding: 12px 16px;
+  flex: 1;
+}
+
+.achievement-title {
+  font-weight: 600;
+  color: #2ecc71;
+}
+
+.achievement-desc {
+  color: #aaa;
+  font-size: 0.95em;
+}
+
+.see-all {
+  color: #2ecc71;
+  font-size: 0.95em;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.languages-card {
+  /* Optional: add a subtle gradient background if you want */
+  background: linear-gradient(135deg, #181a20 80%, #5e5e6d85 100%);
+}
+
+.languages-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.languages-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #232329;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.languages-title {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.languages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.languages-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #2ecc71;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.lang-name {
+  font-weight: 600;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.fluent {
+  color: #2ecc71;
+  font-weight: 500;
+  margin-left: 8px;
+  font-size: 0.98em;
+}
+
+.card.card-image {
+  padding: 0;
+  height: 290px; /* or your preferred height */
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  overflow: hidden;
+  opacity: 60%;
+}
+.card.card-image img {
+  border-radius: 18px; /* match card's border radius */
+}
+
+@media (max-width: 600px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .card, .card-main, .card-wide {
+    padding: 12px 8px;
+    font-size: 1rem;
+  }
+  .languages-list li {
+    gap: 6px;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .lang-name {
+    margin-left: 8px; /* or even 0 if you want them closer */
+  }
+  .dot {
+    width: 9px;
+    height: 9px;
+    margin-left: 0;
+    margin-right: 0;
+    position: static; /* Ensure default positioning */
+    z-index: auto;
+  }
+}

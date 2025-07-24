@@ -1,0 +1,171 @@
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  width: 120%;
+  margin-left: -10%;
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #181a20 80%, #3f3f44 100%);
+  border-radius: 18px;
+  padding: 36px 40px 28px 40px;
+  width: 30%;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #232329;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.modal-close:hover {
+  background: #2ecc71;
+  color: #181a20;
+}
+
+.modal-header {
+  text-align: left;
+  margin-bottom: 24px;
+}
+.modal-primary {
+  color: #2ecc71;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.modal-header h2 {
+  margin: 0 0 8px 0;
+  font-size: 2em;
+  font-weight: 700;
+}
+.modal-header p {
+  color: #b0b0b0;
+  margin: 0;
+}
+
+.modal-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 24px 0 28px 0;
+}
+.modal-tech-grid span {
+  background: #232329;
+  border-radius: 8px;
+  padding: 12px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.05em;
+  color: #fff;
+  transition: background 0.2s, color 0.2s;
+}
+
+.modal-tech-grid span:hover {
+  background: #2ecc70a2;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+.modal-focus-areas {
+  background: #232329;
+  border-radius: 12px;
+  padding: 22px 24px 18px 24px;
+  font-size: 1.08em;
+  color: #fff;
+  margin-top: 24px;
+  border: 1px solid #3a3a40;
+}
+
+.focus-title {
+  font-weight: 700;
+  margin-bottom: 18px;
+  font-size: 1.13em;
+  color: #fff;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 32px; /* row gap, column gap */
+}
+
+.focus-label {
+  font-weight: 600;
+  margin-right: 8px;
+  font-size: 1.05em;
+}
+
+.frontend {
+  color: #2ecc71;
+}
+.backend {
+  color: #2ecc71;
+}
+.styling {
+  color: #2ecc71;
+}
+.devops {
+  color: #2ecc71;
+}
+
+.focus-desc {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.01em;
+}
+
+@media (max-width: 600px) {
+  .modal-overlay {
+    width: 100vw;
+    margin-left: 0;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  .modal-content {
+    width: 95vw;
+    min-width: 0;
+    padding: 16px 6px 12px 6px;
+    font-size: 1em;
+  }
+  .modal-header h2 {
+    font-size: 1.2em;
+  }
+  .modal-tech-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 14px 0 16px 0;
+  }
+  .modal-tech-grid span {
+    font-size: 1em;
+    padding: 10px 0;
+  }
+  .modal-focus-areas {
+    padding: 12px 8px 10px 0px;
+    font-size: 0.98em;
+    max-width: 95%;
+  }
+  .focus-title {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .focus-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}

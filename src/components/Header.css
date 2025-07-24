@@ -1,0 +1,16 @@
+.home-header {
+  position: fixed;      /* or use 'sticky' */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  background: #18181c;  /* or your preferred color */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body, .home-bg {
+  padding-top: 70px; /* adjust to your header height */
+}
