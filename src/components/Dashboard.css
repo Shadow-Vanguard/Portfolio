@@ -270,7 +270,7 @@ body {
     height: 9px;
     margin-left: 0;
     margin-right: 0;
-    position: static; /* Ensure default positioning */
+    position: static !important; /* Ensure default positioning */
     z-index: auto;
   }
 }

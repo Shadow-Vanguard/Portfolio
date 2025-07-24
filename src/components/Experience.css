@@ -46,7 +46,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 4px;
-  height: calc(100% + 300px);
+  height: calc(100% + 320px);
   background: linear-gradient(to bottom, #2ecc71, #2ecc71);
   transform-origin: top;
   transform: scaleY(0);
@@ -96,7 +96,7 @@
 }
 
 .timeline-row:last-child .timeline-year::before {
-  height: 260px;
+  height: 280px;
 }
 
 @keyframes dotPulse {
