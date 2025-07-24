@@ -11,44 +11,11 @@ const experiences = [
     date: "Jul 2025 - Present",
     location: "Remote",
     details: [
-      "Led development of cybersecurity platform (Secure Thread) using SAST framework with SonarQube and Semgrep",
-      "Oversaw secure API design and scalable backend architecture with real-time reporting",
-      "Automated CI/CD using GitHub Actions for fast deployment cycles"
+      "Hands-on experience in real-time data science projects using Python, ML, and data-driven model building.",
+      "Contributing to team tasks by preparing reports, analyzing datasets, and presenting actionable insights.",
+      "Collaborating with cross-functional teams to implement data-driven solutions and improve business outcomes."
     ],
-    tags: ["Python", "Machine Learning", "Numpy", "Pandas", "GitHub Actions"],
-    logo: require("../media/zidio.jpeg")
-  },
-
-
-  {
-    year: "",
-    role: "Data Science & Analytics Intern",
-    company: "Zidio Development",
-    companyUrl: "#",
-    date: "Jul 2025 - Present",
-    location: "Remote",
-    details: [
-      "Led development of cybersecurity platform (Secure Thread) using SAST framework with SonarQube and Semgrep",
-      "Oversaw secure API design and scalable backend architecture with real-time reporting",
-      "Automated CI/CD using GitHub Actions for fast deployment cycles"
-    ],
-    tags: ["Python", "Machine Learning", "Numpy", "Pandas", "GitHub Actions"],
-    logo: require("../media/zidio.jpeg")
-  },
-
-  {
-    year: "2024",
-    role: "Data Science & Analytics Intern",
-    company: "Zidio Development",
-    companyUrl: "#",
-    date: "Jul 2025 - Present",
-    location: "Remote",
-    details: [
-      "Led development of cybersecurity platform (Secure Thread) using SAST framework with SonarQube and Semgrep",
-      "Oversaw secure API design and scalable backend architecture with real-time reporting",
-      "Automated CI/CD using GitHub Actions for fast deployment cycles"
-    ],
-    tags: ["Python", "Machine Learning", "Numpy", "Pandas", "GitHub Actions"],
+    tags: ["Python", "Machine Learning", "Numpy", "Pandas", "Data Analysis"],
     logo: require("../media/zidio.jpeg")
   },
 
@@ -71,9 +38,9 @@ const TimelineItem = ({ experience }) => {
           <img src={experience.logo} alt={experience.company + ' logo'} className="timeline-card-logo" />
           <div>
             <h3 style={{ marginBottom: 2 }}>{experience.role}</h3>
-            <a href={experience.companyUrl} target="_blank" rel="noopener noreferrer" className="company">
+            <span className="company">
               {experience.company}
-            </a>
+            </span>
             <div className="meta">
               <span>{experience.date}</span> &nbsp;|&nbsp; <span>{experience.location}</span>
             </div>

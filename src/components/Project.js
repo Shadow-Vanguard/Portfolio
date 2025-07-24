@@ -30,8 +30,8 @@ const allProjects = [
   },
   {
     category: "House Rental System",
-    title: "House Rental System",
-    image: require("../media/amal jyothi.jpeg"),
+    title: "Estate Agency", 
+    image: require("../media/house_rental.jpg"),
     description: "A full-stack House Rental web application built with Django and React that allows users to browse, list, and manage rental properties with a clean and responsive interface.",
     tags: ["FastAPI", "Python","React", "CSS", "JavaScript","ML"],
     github: "https://github.com/Shadow-Vanguard/House__Rental"
