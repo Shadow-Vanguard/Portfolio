@@ -42,17 +42,17 @@ const Dashboard = () => {
           </div>
           <ul className="languages-list">
             <li>
-              <span className="dot"></span>
+              <span className="dot4"></span>
               <span className="lang-name">English</span>
               <span className="fluent">Fluent</span>
             </li>
             <li>
-              <span className="dot"></span>
+              <span className="dot4"></span>
               <span className="lang-name">Malayalam</span>
               <span className="fluent">Fluent</span>
             </li>
             <li>
-              <span className="dot"></span>
+              <span className="dot4"></span>
               <span className="lang-name">Hindi</span>
               <span className="fluent">Fluent</span>
             </li>

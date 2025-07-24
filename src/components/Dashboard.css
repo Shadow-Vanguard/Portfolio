@@ -214,7 +214,7 @@ body {
   font-size: 1.1em;
 }
 
-.dot {
+.dot4 {
   width: 10px;
   height: 10px;
   background: #2ecc71;
@@ -265,7 +265,7 @@ body {
   .lang-name {
     margin-left: 8px; /* or even 0 if you want them closer */
   }
-  .dot {
+  .dot4 {
     width: 9px;
     height: 9px;
     margin-left: 0;
