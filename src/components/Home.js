@@ -1,6 +1,7 @@
 // src/components/Home.js
 import React, { useEffect, useState, useRef } from "react";
 import "./Home.css"; // We'll create this file for styles
+import { useNavigate } from 'react-router-dom';
 
 function useInViewAnimation(className) {
   const ref = useRef();
@@ -60,6 +61,7 @@ const socialLinks = [
 ];
 
 export default function Home() {
+  const navigate = useNavigate();
   const headerRef = useInViewAnimation("animated-header");
   const navRef = useInViewAnimation("animated-nav");
   const titleRef = useInViewAnimation("animated-title");
@@ -119,49 +121,31 @@ export default function Home() {
         </button>
         <button
           className="nav-btn"
-          onMouseEnter={e => handleMouseEnter(e, 'Under development')}
-          onMouseLeave={handleMouseLeave}
-          onClick={e => handleMobileClick(e, 'Under development')}
+          onClick={() => navigate('/personal')}
         >
           {isMobile ? <i className="fa-solid fa-user"></i> : 'Personal'}
         </button>
         <button
           className="nav-btn"
-          onMouseEnter={e => handleMouseEnter(e, 'Under development')}
-          onMouseLeave={handleMouseLeave}
-          onClick={e => handleMobileClick(e, 'Under development')}
+          onClick={() => navigate('/contact')}
         >
           {isMobile ? <i className="fa-solid fa-envelope"></i> : 'Contact'}
         </button>
       </nav>
-      {tooltip.show && (
-        <div
-          className="custom-tooltip"
-          style={{
-            position: 'absolute',
-            left: tooltip.x,
-            top: tooltip.y + 8,
-            transform: 'translateX(-50%)',
-            zIndex: 2000
-          }}
-        >
-          {tooltip.message}
-        </div>
-      )}
       {/* Main Content */}
       <main className="home-main">  
         <section className="home-left">
-          <div className="home-title" ref={titleRef}>Software Engineer</div>
+          <div className="home-title" ref={titleRef}>Software Engineer / Data Scientist</div>
           <h1>
             <span className="hello drop-down" style={{ animationDelay: "0.1s" }}>Hello I'm</span>
             <span className="first-name drop-down" style={{ animationDelay: "0.2s" }}>Roshan</span>
             <span className="last-name drop-down" style={{ animationDelay: "0.5s" }}>Varghese</span>
           </h1>
           <p className="home-desc" ref={descRef}>
-            An MCA Graduate | Software Engineer & Full-Stack Developer | Learning, Building, Evolving | Driven by purpose, grounded in progress
+            An MCA Graduate | Software Engineer & Full-Stack Developer | Data Scientist & Analyst | Learning, Building, Evolving | Driven by purpose, grounded in progress
           </p>
           <div className="home-actions" ref={actionsRef}>
-            <a href="/media/Roshan_Varghese_Resume.pdf" className="resume-btn" target="_blank" rel="noopener noreferrer">
+            <a href="media\ROSHAN_VARGHESE_RESUME.pdf" className="resume-btn" target="_blank" rel="noopener noreferrer">
               VIEW RESUME <i className="fa fa-file"></i>
             </a>
             <div className="social-icons">

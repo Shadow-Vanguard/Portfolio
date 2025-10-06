@@ -135,7 +135,7 @@
     width: 100vw;
     margin-left: 0;
     align-items: flex-start;
-    padding-top: 30px;
+    margin-top: -50px;
   }
   .modal-content {
     width: 95vw;
