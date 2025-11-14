@@ -125,13 +125,13 @@ const Dashboard = () => {
             <h2>Certifications</h2>
             <div className="achievement">
               <div className="achievement">
-                <div className="achievement-title">Infosys Springboard</div>
-                <div className="achievement-desc">Introduction To Artifical Intelligence</div>
+                <div className="achievement-title">Data Science And Analytics</div>
+                <div className="achievement-desc">Zidio Development</div>
               </div>
 
               <div className="achievement">
-                <div className="achievement-title">Infosys Springboard</div>
-                <div className="achievement-desc">Introduction To Data Science</div>
+                <div className="achievement-title">Introduction To Artifical Intelligence</div>
+                <div className="achievement-desc">Infosys Springboard</div>
               </div>
               <div
                 className="more-cert"

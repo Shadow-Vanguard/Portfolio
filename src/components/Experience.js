@@ -8,14 +8,15 @@ const experiences = [
     role: "Data Science & Analytics Intern",
     company: "Zidio Development",
     companyUrl: "#",
-    date: "Jul 2025 - Present",
+    date: "Jul 2025 - Oct 2025",
     location: "Remote",
     details: [
-      "Hands-on experience in real-time data science projects using Python and ML involving data analysis and model building.",
-      "Contributing to team tasks by preparing reports, analyzing datasets, and presenting actionable insights.",
-      "Collaborating with cross-functional teams to implement data-driven solutions and improve business outcomes."
+      "Built and finetuned ML models on datasets of 20,000+ records, achieving 92% accuracy and reducing manual analysis time by 30%.",
+      "Performed data cleaning, preprocessing, and exploratory data analysis (EDA) to uncover insights and improve data quality.",
+      "Created interactive dashboards and visual reports using Power BI and Matplotlib to present business insights.",
+      "Collaborated with the analytics team to prepare reports, optimize data pipelines, and implement data-driven solutions."
     ],
-    tags: ["Python", "Machine Learning", "Numpy", "Pandas", "Data Analysis"],
+    tags: ["Python", "Machine Learning", "Numpy", "Pandas", "Data Analysis", "Data Visualization","Power BI"],
     logo: require("../media/zidio.jpeg")
   },
 

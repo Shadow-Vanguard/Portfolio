@@ -24,6 +24,10 @@ const Certification = ({ open, onClose, size = "large" }) => {
         <div className="modal-focus-areas">
           <div className="focus-title"></div>
           <div className="focus-grid">
+          <div>
+              <span className="focus-label frontend">Data Science And Analytics -</span>
+              <span className="focus-desc">Zidio Development</span>
+            </div>
             <div>
               <span className="focus-label frontend">Java Programming -</span>
               <span className="focus-desc">Oracle Academy</span>
@@ -34,7 +38,7 @@ const Certification = ({ open, onClose, size = "large" }) => {
             </div>
 
             <div>
-              <span className="focus-label backend">Introduction To Natural Language Processing -</span>
+              <span className="focus-label backend">Introduction To Data Science -</span>
               <span className="focus-desc">Infosys Springboard</span>
             </div>
 
@@ -42,6 +46,18 @@ const Certification = ({ open, onClose, size = "large" }) => {
               <span className="focus-label backend">Python Programming -</span>
               <span className="focus-desc">Udemy</span>
             </div>
+
+            <div>
+              <span className="focus-label backend">Introduction To Artifical Intelligence -</span>
+              <span className="focus-desc">Infosys Springboard</span>
+            </div>
+            
+            <div>
+              <span className="focus-label backend">Introduction To Natural Language Processing -</span>
+              <span className="focus-desc">Infosys Springboard</span>
+            </div>
+
+
           </div>
         </div>
       </div>

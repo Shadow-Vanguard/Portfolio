@@ -96,7 +96,7 @@
 }
 
 .timeline-row:last-child .timeline-year::before {
-  height: 280px;
+  height: 340px;
 }
 
 @keyframes dotPulse {
@@ -266,7 +266,7 @@
     font-size: 0.9em;
   }
   .timeline-row:last-child .timeline-year::before {
-    height: 400px; 
+    height: 530px; 
   }
   
   /* .timeline::after {

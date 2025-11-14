@@ -145,7 +145,7 @@ export default function Home() {
             An MCA Graduate | Software Engineer & Full-Stack Developer | Data Scientist & Analyst | Learning, Building, Evolving | Driven by purpose, grounded in progress
           </p>
           <div className="home-actions" ref={actionsRef}>
-            <a href="/media/Roshan_Varghese_Resume.pdf?v=2" className="resume-btn" target="_blank" rel="noopener noreferrer">
+            <a href="/media/Roshan_Varghese_Data_Analyst.pdf?v=2" className="resume-btn" target="_blank" rel="noopener noreferrer">
               VIEW RESUME <i className="fa fa-file"></i>
             </a>
             <div className="social-icons">
