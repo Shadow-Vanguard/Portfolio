@@ -95,6 +95,7 @@
   transform: translateY(0);
 }
 
+
 .timeline-row:last-child .timeline-year::before {
   height: 400px;
 }
