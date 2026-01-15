@@ -135,7 +135,7 @@ export default function Home() {
       {/* Main Content */}
       <main className="home-main">  
         <section className="home-left">
-          <div className="home-title" ref={titleRef}>Software Engineer / Data Scientist</div>
+          <div className="home-title" ref={titleRef}>AI / ML Engineer / Data Scientist</div>
           <h1>
             <span className="hello drop-down" style={{ animationDelay: "0.1s" }}>Hello I'm</span>
             <span className="first-name drop-down" style={{ animationDelay: "0.2s" }}>Roshan</span>
@@ -145,7 +145,7 @@ export default function Home() {
             An MCA Graduate | Software Engineer & Full-Stack Developer | Data Scientist & Analyst | Learning, Building, Evolving | Driven by purpose, grounded in progress
           </p>
           <div className="home-actions" ref={actionsRef}>
-            <a href="/media/Roshan_Varghese_Data_Analyst.pdf?v=2" className="resume-btn" target="_blank" rel="noopener noreferrer">
+            <a href="/media/Roshan_Varghese_AI_ML_Engineer.pdf?v=2" className="resume-btn" target="_blank" rel="noopener noreferrer">
               VIEW RESUME <i className="fa fa-file"></i>
             </a>
             <div className="social-icons">

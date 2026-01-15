@@ -112,9 +112,7 @@ const Dashboard = () => {
             alt="Coding"
             style={{
               width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              borderRadius: "8px"
+              height: "100%"
             }}
           />
         </div>
