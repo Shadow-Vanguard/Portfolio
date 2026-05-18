@@ -4,11 +4,28 @@ import useInViewAnimation from "./useViewAnimation";
 
 const experiences = [
   {
+    year: "2026",
+    role: "Junior Data Analyst",
+    company: "Zidio Development",
+    companyUrl: "#",
+    date: "Jun 2025 - Feb 2026",
+    location: "Remote",
+    details: [
+      "Processed and cleaned 80K+ records using Python (Pandas, NumPy) and Excel, improving data quality by 30% through effective preprocessing.",
+      "Designed and maintained ETL pipelines using Python and SQL (MySQL), ensuring reliable data flow and consistency across systems.",
+      "Developed optimized SQL queries and reports, improving reporting efficiency by 25% and supporting KPI tracking.",
+      "Built interactive Power BI dashboards with data visualization techniques using Matplotlib to deliver clear insights and support decision-making.",
+      "Performed EDA (Exploratory Data Analysis) and statistical analysis in Jupyter Notebook, translating business requirements into actionable insights with strong analytical thinking and storytelling."
+    ],
+    tags: ["Python", "Machine Learning", "Numpy", "Pandas", "Data Analysis", "Data Visualization","Power BI"],
+    logo: require("../media/zidio.jpeg")
+  },
+  {
     year: "2025",
     role: "Data Science & Analytics Intern",
     company: "Zidio Development",
     companyUrl: "#",
-    date: "Jul 2025 - Oct 2025",
+    date: "Mar 2025 - Jun 2025",
     location: "Remote",
     details: [
       "Built and finetuned ML models on datasets of 20,000+ records, achieving 92% accuracy and reducing manual analysis time by 30%.",
@@ -19,9 +36,6 @@ const experiences = [
     tags: ["Python", "Machine Learning", "Numpy", "Pandas", "Data Analysis", "Data Visualization","Power BI"],
     logo: require("../media/zidio.jpeg")
   },
-
-
-
 
 ];
 

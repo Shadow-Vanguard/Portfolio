@@ -25,6 +25,10 @@ const Certification = ({ open, onClose, size = "large" }) => {
           <div className="focus-title"></div>
           <div className="focus-grid">
           <div>
+              <span className="focus-label frontend">Power BI -</span>
+              <span className="focus-desc">Office Master</span>
+          </div>
+          <div>
               <span className="focus-label frontend">Data Science And Analytics -</span>
               <span className="focus-desc">Zidio Development</span>
             </div>

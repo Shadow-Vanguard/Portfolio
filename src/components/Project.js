@@ -7,6 +7,7 @@ const categories = [
   "Glamour Quest",
   "Estate Agency",
   "Wiki Search Engine",
+  "Tasty Club",
 
 ];
 
@@ -45,6 +46,15 @@ const allProjects = [
     tags: ["FastAPI", "React","CSS", "JavaScript"],
     github: "https://github.com/Shadow-Vanguard/Wiki_Search"
   },
+  {
+    category: "Tasty Club",
+    title: "Tasty Club Restaurant",
+    image: require("../media/Tastyclub.png"),
+    description: "A Website developed for a restaurant to showcase their menu and services.",
+    tags: ["FastAPI", "HTML","CSS", "JavaScript"],
+    github: "https://github.com/Shadow-Vanguard/Tasty_Club_Restaurant"
+  },
+  
 ];
 
 const Project = () => {
