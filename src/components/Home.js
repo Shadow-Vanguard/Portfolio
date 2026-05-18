@@ -62,7 +62,6 @@ const socialLinks = [
 
 export default function Home() {
   const navigate = useNavigate();
-  const headerRef = useInViewAnimation("animated-header");
   const navRef = useInViewAnimation("animated-nav");
   const titleRef = useInViewAnimation("animated-title");
   const descRef = useInViewAnimation("animated-desc");
@@ -78,39 +77,6 @@ export default function Home() {
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
-
-  // Tooltip logic
-  const [tooltip, setTooltip] = React.useState({ show: false, message: '', x: 0, y: 0 });
-  const tooltipTimeout = React.useRef();
-
-  const handleMouseEnter = (e, message) => {
-    if (isMobile) return;
-    const rect = e.target.getBoundingClientRect();
-    setTooltip({
-      show: true,
-      message,
-      x: rect.left + rect.width / 2,
-      y: rect.bottom + window.scrollY
-    });
-  };
-  const handleMouseLeave = () => {
-    if (isMobile) return;
-    setTooltip({ ...tooltip, show: false });
-  };
-  const handleMobileClick = (e, message) => {
-    if (!isMobile) return;
-    const rect = e.target.getBoundingClientRect();
-    setTooltip({
-      show: true,
-      message,
-      x: rect.left + rect.width / 2,
-      y: rect.bottom + window.scrollY
-    });
-    clearTimeout(tooltipTimeout.current);
-    tooltipTimeout.current = setTimeout(() => {
-      setTooltip(t => ({ ...t, show: false }));
-    }, 2000);
-  };
 
   return (
     <div className="home-bg">

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Project.css";
-import Footer from "./Footer";
 
 const categories = [
   "Road Guardian",

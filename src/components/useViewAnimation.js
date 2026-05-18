@@ -7,16 +7,6 @@ export default function useInViewAnimation(className) {
     const node = ref.current;
     if (!node) return;
 
-    const handleAnimation = (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          node.classList.add(className);
-        } else {
-          node.classList.remove(className);
-        }
-      });
-    };
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
